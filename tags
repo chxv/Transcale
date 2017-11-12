@@ -1,0 +1,24 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+C	xtrans	/^/;"	v
+CharToInt	IntWithChar.h	/^bool CharToInt(char ch,int &i)$/;"	f	signature:(char ch,int &i)
+I	xtrans	/^/;"	v
+IntToChar	IntWithChar.h	/^bool IntToChar(int i,char &ch)$/;"	f	signature:(int i,char &ch)
+TenToX	scale.h	/^std::string TenToX(int ten,int x)$/;"	f	signature:(int ten,int x)
+_DETECT_H	detect.h	9;"	d
+_INFO_H	info.h	9;"	d
+_INTWITHCHAR_H	IntWithChar.h	9;"	d
+_SCALE_H	scale.h	9;"	d
+c	xtrans	/^úc/;"	v
+detect_num	detect.h	/^int detect_num(const string &s)$/;"	f	signature:(const string &s)
+detect_param	detect.h	/^bool detect_param(const std::string &lhs,const std::string &rhs)$/;"	f	signature:(const std::string &lhs,const std::string &rhs)
+error	info.h	/^void error(const std::string &str=" ")$/;"	f	signature:(const std::string &str=Ó)
+main	tran.cpp	/^int main(int argc ,char *argv[])$/;"	f	signature:(int argc ,char *argv[])
+output_help	info.h	/^void output_help()$/;"	f	signature:()
+p	xtrans	/^ELF/;"	v
+param_error_info	info.h	/^void param_error_info(const std::string &str=" ")$/;"	f	signature:(const std::string &str=Ó)
+parse_num	detect.h	/^bool parse_num(const std::string &num,vector<int> &vec)$/;"	f	signature:(const std::string &num,vector<int> &vec)

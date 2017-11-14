@@ -31,20 +31,31 @@ int detect_num(const std::string &s)
         //16
         else if(s[1]=='x')
         {
+            int i;
             //若满足条件则返回，否则报错
-            for(int i=2;i<s.size();++i)
+            for(i=2;i<s.size();++i)
+            {
                 if((int(s[i])-int('0')<=9&&int(s[i])-int('0')>=0)
                         ||s[i]=='A'||s[i]=='B'||s[i]=='C'
                         ||s[i]=='D'||s[i]=='E'||s[i]=='F')
-                    return 16;
+                    continue;      
+              break;  
+            }
+            return 16;
             error("错误的16进制信息");
         }
         //8
         else if(int(s[1])>int('0')&&int(s[1]<int('8')))
         {
-            for(int i=2;i<s.size();++i)
+            int i;
+            for(i=2;i<s.size();++i)
+            {
                 if(int(s[i])-int('0')>=0&&int(s[i])-int('0')<8)
-                    return 8;
+                    continue;       
+                break; 
+            }
+            if(i==s.size())
+                return 8;
             error("错误的8进制信息");
         }
         else
@@ -53,9 +64,15 @@ int detect_num(const std::string &s)
     //10
     else if(int(s[0])>int('0')&&int(s[0])-int('0')<10)
     {
-        for(int i=0;i<s.size();++i)
-            if(int(s[0])>int('0')&&int(s[0])-int('0')<10)
-                return 10;
+        int i;
+        for(i=0;i<s.size();++i)
+        {
+            if(int(s[i])>int('0')&&int(s[i])-int('0')<10)
+                continue;
+            break;
+        }
+        if(i==s.size())
+            return 10;
         error("错误的10进制信息");
     }
     else
